@@ -16,10 +16,12 @@
 * df.tail(10) // to show last 10 rows
 * df[["name", "mfr"]] //  filter the df by columns name and mfr
 * df.set_index("fat") # set which colum to be your index (the first column)
-* new_df = df[["name","rating","sugars"]].sort_values('rating', ascending=False) // sprting
+* new_df = df[["name","rating","sugars"]].sort_values('rating', ascending=False) // sorting
 * avg_sodium = df[["sodium"]].mean() // fining average
 * max_carbohydrate = df['carbo'].max() // finding max
 * highly_rated_food =  df[df['rating'] > 50][['name', 'sugars']] // Show the food name and sugar content of any food with a rating larger than 50
-* mcc =  df['carbo'].mode() // 
-* df['potass'].std() // standard deviation
+* mcc =  df['carbo'].mode() // find most repeated
+* df['potass'].std() // standard deviation 
+* df[['mfr','sugars','protein']].groupby('mfr').median() //
+* top20 = new_videoGameData.nlargest(20,'Global_Sales') // top 20
 * enumerate() allows us to iterate through a sequence but it keeps track of both the index and the element. The enumerate() function takes in an iterable as an argument, such as a list, string, tuple, or dictionary.
